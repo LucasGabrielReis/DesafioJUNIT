@@ -9,7 +9,7 @@ class JulgamentoPrisioneiroTest {
 		JulgamentoPrisioneiro obj = new JulgamentoPrisioneiro();
 		int resultadoEsperado = 5;
 		int resultadoReal = obj.calculaPena("Culpado", "Culpado");
-		
+		assertEquals(resultadoEsperado, resultadoReal);
 		
 	}
 

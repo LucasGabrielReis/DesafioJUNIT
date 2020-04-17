@@ -5,14 +5,14 @@ public class JulgamentoPrisioneiro {
 	private int PENA_CONDENACAO_CUMPLICES = 11;
 
 	public int calculaPena(String StringPrisioneiroA, String StringPrisioneiroB) {
-		if (StringPrisioneiroA == String.DELACAO) {
-			if (StringPrisioneiroB == String.DELACAO) {
+		if (StringPrisioneiroA.equalsIgnoreCase("Culpado")) {
+			if (StringPrisioneiroB.equalsIgnoreCase("Culpado")){
 				return PENA_CONDENACAO_MUTUA;
 			} else {
 				return PENA_INOCENCIA;
 			}
 		} else {
-			if (StringPrisioneiroB == String.DELACAO) {
+			if (StringPrisioneiroB.equalsIgnoreCase("Culpado")){
 				return PENA_CONDENACAO_INDIVIDUAL;
 			} else {
 				return PENA_CONDENACAO_CUMPLICES;
