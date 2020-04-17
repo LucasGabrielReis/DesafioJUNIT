@@ -6,7 +6,11 @@ class JulgamentoPrisioneiroTest {
 
 	@Test
 	void testCalculaPena() {
-		fail("Not yet implemented");
+		JulgamentoPrisioneiro obj = new JulgamentoPrisioneiro();
+		int resultadoEsperado = 5;
+		int resultadoReal = obj.calculaPena("Culpado", "Culpado");
+		
+		
 	}
 
 }
